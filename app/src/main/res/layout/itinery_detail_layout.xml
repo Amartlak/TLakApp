@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="match_parent"
+    android:weightSum="3"
+    android:id="@+id/alrts_navi"
+    android:background="#000"
+    android:layout_height="55dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_weight="0.6"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:id="@+id/back_btnx_txt"
+        android:src="@drawable/back_arrows"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/hedrtxt"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_weight="2.1"
+        android:text="Wat Consulting services"/>
+    <!--<ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.9"
+        android:id="@+id/doctofilsdoc"
+        android:src="@drawable/notification_ico"/>-->
+
+</LinearLayout>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="11dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333"
+                android:id="@+id/tour_heading"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#999"
+                android:id="@+id/sub_heading"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tour_heading"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_250"
+                android:layout_below="@+id/sub_heading"
+                android:layout_marginTop="9dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:id="@+id/day"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/img"
+                android:textSize="14sp"/>
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/jjd"
+                android:layout_below="@+id/day"
+                >
+                <TableRow>
+                    <!--<TextView
+                        android:layout_column="1"
+                        android:textColor="#923701"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="•  "></TextView>
+                    <TextView
+                        android:layout_column="2"
+                        android:textColor="#000"
+                        android:layout_marginBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/first"
+                        android:text="First line"></TextView>-->
+                </TableRow>
+                <TableRow>
+                  <!--  <TextView
+                        android:layout_column="1"
+                        android:textColor="#923701"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="•  "></TextView>
+                    <TextView
+                        android:layout_column="2"
+                        android:textColor="#000"
+                        android:layout_marginBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/second"
+                        android:text="Second line"></TextView>-->
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#000"
+                android:id="@+id/descriptionHeading"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/jjd"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:id="@+id/description"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/descriptionHeading"
+                android:textSize="11sp"/>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/jjdd"
+                android:layout_below="@+id/description">
+                <TableRow>
+                   <!-- <TextView
+                        android:layout_column="1"
+                        android:textColor="#923701"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text=""></TextView>
+                    <TextView
+                        android:layout_column="2"
+                        android:textColor="#000"
+                        android:layout_marginBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:text="Transfer to Hotel"></TextView>-->
+                </TableRow>
+                <TableRow>
+                  <!--  <TextView
+                        android:layout_column="1"
+                        android:textColor="#923701"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="•  "></TextView>
+                    <TextView
+                        android:layout_column="2"
+                        android:textColor="#000"
+                        android:layout_marginBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:text="Free Time - can explorenight life activities at you own"></TextView>-->
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inclusion"
+                android:textColor="#000"
+                android:id="@+id/inclusion"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/jjdd"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:id="@+id/inclusion_detail"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/inclusion"
+                android:textSize="11sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exclusion"
+                android:textColor="#000"
+                android:id="@+id/exclusion"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/inclusion_detail"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:id="@+id/exclusion_detail"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/exclusion"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

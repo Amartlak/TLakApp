@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/EditTextName"
+        android:layout_height="@dimen/dp_50"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/dp_5"
+        android:background="@drawable/edittext_corner"
+        android:layout_width="match_parent">
+    </EditText>
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_height="@dimen/dp_50"
+        android:hint="Email ID"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/dp_5"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_corner"
+        android:layout_width="fill_parent">
+</EditText>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_height="@dimen/dp_50"
+        android:hint="Contact Number"
+        android:layout_marginTop="20dp"
+       android:numeric="integer"
+        android:paddingLeft="@dimen/dp_5"
+        android:maxLength="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_corner"
+        android:layout_width="fill_parent">
+    </EditText>
+    <EditText
+        android:id="@+id/EditTextFeedbackBody"
+        android:layout_height="wrap_content"
+        android:hint="Message..."
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:paddingLeft="@dimen/dp_5"
+        android:gravity="top"
+        android:maxLength="100"
+        android:background="@drawable/edittext_corner"
+        android:lines="5"
+        android:layout_width="fill_parent"/>
+    <Button
+        android:id="@+id/ButtonSendFeedback"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:maxLength="100"
+        android:background="@drawable/edittext_corner"
+        android:onClick="sendFeedback"
+        android:layout_width="fill_parent">
+    </Button>
+</LinearLayout>

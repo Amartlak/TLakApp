@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardMaxElevation="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="6dp"
+        android:id="@+id/cardss"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:corner_radius="10dp"
+                android:id="@+id/images">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/background_img"/>
+                <!--  <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/dp_200"
+                         android:background="@drawable/background_img" />-->
+
+                <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                    android:id="@+id/hjkf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#fff"
+                    app:corner_radius="5dp"
+                    android:elevation="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/fir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/ss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#923701"
+                            android:text="Shangiri-La Hotel, Bangkok" />
+
+                        <ImageView
+                            android:id="@+id/hj"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/ss"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/sa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ss"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/hj"
+                            android:text="Shangiri-La Hotel, Bangkok" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fir"
+                        android:padding="10dp">
+
+                        <!-- <RatingBar
+                             android:id="@+id/ratingBar"
+                             style="?android:attr/ratingBarStyleSmall"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:rating="3" />
+
+                         <TextView
+                             android:id="@+id/rating"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_marginLeft="5dp"
+                             android:layout_toRightOf="@+id/ratingBar"
+                             android:text="3"
+                             android:textColor="#000"
+                             android:textStyle="bold" />
+     -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="7dp"
+                            android:text="2452 Review" />
+                    </RelativeLayout>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+                <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hjkf"
+                    android:id="@+id/address"
+                    android:layout_marginTop="10dp"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/firsts">
+                      <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/im"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="free wifi"
+                            android:id="@+id/hgj"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/im"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/ims"
+                            android:layout_marginTop="14dp"
+                            android:text="free wifi"
+                            android:layout_below="@+id/im"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TV"
+                            android:id="@+id/texts"
+                            android:layout_below="@+id/hgj"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/ims"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           android:layout_centerHorizontal="true"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/ic_launcher"
+                                android:id="@+id/imjd"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="free wifi"
+                                android:id="@+id/hgjdd"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/imjd"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/ic_launcher"
+                                android:id="@+id/imsfd"
+                                android:layout_marginTop="14dp"
+                                android:text="free wifi"
+                                android:layout_below="@+id/imjd"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TV"
+                                android:id="@+id/textsss"
+                                android:layout_below="@+id/hgjdd"
+                                android:layout_marginTop="14dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/imsfd"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                          android:layout_alignParentEnd="true"
+                          >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/ic_launcher"
+                                android:id="@+id/imj"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="free wifi"
+                                android:id="@+id/hgjd"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/imj"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@mipmap/ic_launcher"
+                                android:id="@+id/imsf"
+                                android:layout_marginTop="14dp"
+                                android:text="free wifi"
+                                android:layout_below="@+id/imj"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TV"
+                                android:id="@+id/textss"
+                                android:layout_below="@+id/hgjd"
+                                android:layout_marginTop="14dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/imsf"
+                                />
+                        </RelativeLayout>
+                       <!-- <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/ims"
+
+                            android:text="free wifi"
+                            android:layout_marginLeft="50dp"
+                            android:layout_toRightOf="@+id/hgj"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TV"
+                            android:id="@+id/texts"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/ims"
+                            />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:layout_toRightOf="@+id/texts"
+                            android:layout_marginLeft="50dp"
+                            android:id="@+id/jkfff"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/jkfff"
+                            android:text="TVsfdsfdfdsfds"
+                            android:layout_marginLeft="5dp"/>-->
+                    </RelativeLayout>
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/firsts">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/imj"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="free wifi"
+                            android:id="@+id/hgjk"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/imj"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/imsj"
+                            android:text="free wifi"
+                            android:layout_marginLeft="50dp"
+                            android:layout_toRightOf="@+id/hgjk"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TV"
+                            android:id="@+id/textss"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/imsj"
+                            />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:layout_toRightOf="@+id/textss"
+                            android:layout_marginLeft="50dp"
+                            android:id="@+id/jkfffg"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/jkfffg"
+                            android:text="TVsfdsfdfdsfds"
+                            android:layout_marginLeft="5dp"/>
+                    </RelativeLayout>-->
+                </RelativeLayout>
+
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:paddingLeft="15dp"
+                    android:id="@+id/addr"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:text="Address:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/addrs"
+                    android:layout_marginTop="15dp"
+
+                    android:textColor="#000"
+                    android:layout_toRightOf="@+id/addr"
+                    android:text="Address:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A travel document is an identity document issued by a government or international treaty organization to facilitate the movement of individuals."
+
+                    android:paddingLeft="15dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/addrs"/>
+            </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/poi"
+        android:title="POI"
+        android:icon="@drawable/map_poi_ico"
+        android:iconTint="@color/poi_map_selector"
+        />
+    <item android:id="@+id/optional"
+        android:title="Tranports"
+        android:icon="@drawable/map_view_point_ico"
+        android:iconTint="@color/poi_map_selector"
+        />
+    <item android:id="@+id/restaurant"
+        android:title="Restaurants"
+        android:icon="@drawable/map_resturant_ico"
+        android:iconTint="@color/poi_map_selector"
+        />
+    <item android:id="@+id/shopping"
+        android:title="Shopping"
+        android:icon="@drawable/sos_ico"
+        android:iconTint="@color/poi_map_selector"
+        />
+
+    <item android:id="@+id/viewall"
+        android:title="View All"
+        android:icon="@drawable/viewall_selector"
+        android:iconTint="@color/poi_map_selector"
+        />
+</menu>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:elevation="10dp"
+    app:layout_constraintCircleRadius="@dimen/dp_10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_card_background"
+        android:gravity="top"
+        android:clipChildren="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:clipChildren="true">
+            <com.watconsult.tlakapp.ui.Itineary.RoundImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/itinerary_main_img"
+                app:radius="11dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="Day 1"
+                    android:textColor="@android:color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/welcome_name"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:text="Welcome to Almaty"
+                    android:layout_below="@+id/tv_name"/>
+                <TextView
+                    android:id="@+id/tv_sub1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text of prininting and typesetting industry"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/welcome_name"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_sub1"
+                    android:text="See more"
+                    android:paddingLeft="80dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingRight="80dp"
+                    android:textAllCaps="false"
+                    android:id="@+id/more"
+                    style="@style/buttonStyle"
+                    android:background="@drawable/round_corner_btn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:visibility="gone"
+                    android:id="@+id/itid"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

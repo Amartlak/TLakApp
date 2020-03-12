@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/itinery"
+        android:title="Itineary"
+        android:icon="@drawable/itineary_selector"
+        />
+    <item android:id="@+id/group"
+        android:title="My Group"
+        android:icon="@drawable/mygroup_selector"
+        />
+    <item android:id="@+id/poi"
+        android:title="POI"
+        android:icon="@drawable/poi_selector"
+        />
+    <item android:id="@+id/weather"
+        android:title="Weather"
+        android:icon="@drawable/weather_selector"
+        />
+<item android:id="@+id/map"
+        android:title="Map"
+        android:icon="@drawable/map_selector"
+        />
+</menu>

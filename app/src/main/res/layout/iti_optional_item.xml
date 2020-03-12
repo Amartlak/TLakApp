@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+       <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="240dp"
+            android:layout_height="@dimen/dp_150"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="9dip"
+            android:elevation="5dp"
+           android:adjustViewBounds="true"
+            android:id="@+id/poi_img"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="true"
+            android:src="@drawable/background_img"
+            />
+      <!--  <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+    </LinearLayout>
+</HorizontalScrollView>
+
+
+   <!-- <?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_gravity="center"
+android:orientation="horizontal"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:id="@+id/xml_full_img_linear_below_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+    &lt;!&ndash; <com.makeramen.roundedimageview.RoundedImageView
+         android:layout_width="240dp"
+         android:layout_height="@dimen/dp_150"
+         android:scaleType="fitCenter"
+         app:riv_corner_radius="9dip"
+         android:elevation="5dp"
+         android:id="@+id/poi_img"
+         app:riv_border_color="#333333"
+         app:riv_mutate_background="true"
+         android:src="@drawable/background_img"
+         />&ndash;&gt;
+
+    <ImageView
+        android:id="@+id/poi_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+</HorizontalScrollView>
+-->

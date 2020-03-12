@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">TLAK</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="NoInternet">Please check your network connection and try again. </string>
+
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <!--   <string name="menu_home">Home</string>
+       <string name="menu_gallery">Gallery</string>
+       <string name="menu_slideshow">Slideshow</string>
+       <string name="menu_tools">Tools</string>
+       <string name="menu_share">Share</string>
+       <string name="menu_send">Send</string>-->
+    <string name="menu_home">Refresh Data</string>
+    <string name="menu_profile">Profile</string>
+    <string name="itinerary">Itinerary</string>
+    <string name="group">My Group</string>
+    <string name="flights">Flights</string>
+    <string name="hotel">Hotels</string>
+    <string name="poi">Point of interest</string>
+    <string name="menu_doc">Documents</string>
+    <string name="weather">Weather</string>
+    <string name="map">Map</string>
+    <string name="tour">Optionals</string>
+    <string name="sos">SOS</string>
+    <string name="condition">Terms &amp; Conditions</string>
+    <string name="con_suppot">Contact Support</string>
+    <string name="feedback">Feedback</string>
+    <string name="setting">Setting</string>
+    <string name="placard">PlaCard</string>
+    <string name="hint_resource">Please Select</string>
+    <string name="skip">SKIP</string>
+    <string name="slide_1_title">Know your tour group and itinerary</string>
+    <string name="slide_1_desc">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys dummy text ever since the 1500s</string>
+
+    <string name="slide_2_title">Check Your Trip Day Waise</string>
+    <string name="slide_2_desc">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys dummy text ever since the 1500s</string>
+
+    <string name="slide_3_title">Chat and track in Your Group</string>
+    <string name="slide_3_desc">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys dummy text ever since the 1500s</string>
+
+    <string name="slide_4_title">All Tour Document in One Place</string>
+    <string name="slide_4_desc">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys dummy text ever since the 1500s</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Profile</item>
+        <item>Itinerary</item>
+        <item>My Group</item>
+        <item>Point of interest</item>
+        <item>Optionals</item>
+        <item>Flights</item>
+        <item>Hotels</item>
+        <item>Documents</item>
+        <item>Weather</item>
+        <item>Map</item>
+        <item>Upcoming Tour</item>
+        <item>SOS</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Contact Support</item>
+        <item>Feedback</item>
+        <item>Setting</item>
+        <item>PlaCard</item>
+    </string-array>
+    <string-array name="bottom_drawer_items_array">
+        <item>Itinerary</item>
+        <item>My Group</item>
+        <item>Point of interest</item>
+        <item>Hotels</item>
+        <item>Weather</item>
+        <item>Map</item>
+    </string-array>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:background="#fff"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dd"
+        android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="@dimen/dp_200"
+                android:id="@+id/poi_image"
+                app:riv_corner_radius="19dip"
+                android:background="@drawable/background_img"
+                android:layout_height="@dimen/dp_200"/>
+<!--<ImageView
+    android:layout_width="170dp"
+    android:layout_height="285dp"
+    android:padding="5dp"
+    android:id="@+id/poi_image"
+    android:background="@drawable/background_img"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Big Almaty Lake"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:id="@+id/aa"
+            android:layout_toRightOf="@+id/poi_image"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/cc"
+            android:textColor="#000"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/poi_image"
+            android:layout_below="@+id/aa"
+            android:text="Reservoir in Kazakhstan"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/poi_image"
+            android:layout_below="@+id/cc"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="6dp"
+            android:id="@+id/ss"
+            android:textColor="#000"
+            android:text="Big Almaty lake is naturl alpine reservoir."
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/poi_image"
+            android:background="@mipmap/ic_launcher"
+            android:id="@+id/ff"
+            android:layout_below="@+id/ss"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/kk"
+            android:text="Direction"
+            android:layout_marginLeft="4dp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/poi_image"
+            android:layout_below="@+id/ff"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/kk"
+            android:background="@mipmap/ic_launcher"
+            android:id="@+id/hh"
+            android:layout_below="@+id/ss"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/kks"
+            android:text="0.5 km"
+            android:textColor="#000"
+
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/kk"
+            android:layout_below="@+id/ff"/>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours: "
+        android:textSize="14dp"
+        android:textColor="#000"
+        android:id="@+id/jk"
+    android:layout_marginLeft="@dimen/dp_4"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/kks"
+        android:layout_toRightOf="@+id/poi_image"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textSize="14dp"
+            android:textColor="#000"
+            android:id="@+id/jks"
+
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/kks"
+            android:layout_toRightOf="@+id/jk"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length: "
+            android:textSize="14dp"
+            android:layout_below="@+id/jk"
+            android:id="@+id/hghj"
+
+android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/poi_image"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.6 km"
+            android:textSize="14dp"
+
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/hghj"
+            android:layout_below="@+id/jks"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>

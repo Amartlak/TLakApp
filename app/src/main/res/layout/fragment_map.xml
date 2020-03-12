@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:prompt="@string/hint_resource"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:elevation="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        style="@style/Dexter.Internal.Theme.Transparent"
+        android:background="@drawable/gradient_spinner"
+        android:id="@+id/spinner_city"/>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        />
+<!--<include layout="@layout/map_bottombar_layout"/>-->
+</FrameLayout>

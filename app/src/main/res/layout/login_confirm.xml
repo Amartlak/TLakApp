@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/splashlogo"/>-->
+
+    <ImageView
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:background="@color/white" />
+   <!-- <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/header_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-125dp"
+        android:background="@drawable/profile_circular_border_imageview"
+        android:elevation="5dp"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_man" />-->
+    <LinearLayout android:layout_height="850dp"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#fff">
+
+            <!--  <ImageView
+                  android:layout_width="150dp"
+                  android:layout_height="150dp"
+                  android:layout_marginTop="30dp"
+                  android:id="@+id/logo"
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/splashlogo"/>-->
+            <!--  <ImageButton
+                  android:layout_width="@dimen/dp_100"
+                  android:layout_height="@dimen/dp_100"
+                  android:layout_below="@+id/logo"
+                  android:background="@drawable/profile_circular_border_imageview"/>-->
+        </RelativeLayout>
+        <!-- <ImageButton
+              android:id="@+id/user_profile_photo"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_below="@+id/header_cover_image"
+            android:layout_gravity="center"
+              android:background="@drawable/profile_circular_border_imageview"
+              android:elevation="45dp"
+
+              android:padding="1dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/placeholder_man" />-->
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:corner_radius="10dp"
+            android:elevation="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#fff">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Time to pick your rucksack! \nJust select your name from the list below."
+                android:textColor="#333"
+                android:textSize="18sp"
+                android:id="@+id/login_text"
+                android:layout_marginTop="70dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/login_text"
+                android:layout_marginBottom="80dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:paddingTop="25dp">
+               <!-- <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:id="@+id/name"
+                     android:cursorVisible="true"
+                     android:backgroundTint="#ccc"
+                     android:singleLine="true"
+                     android:hint="Name"/>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:id="@+id/name"
+                    android:layout_gravity="center_horizontal"
+                    android:prompt="@string/hint_resource"
+                    android:layout_height="wrap_content"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/validatespin"
+                        android:textColor="#ff0000"
+                        android:visibility="gone"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="Please select category"/>
+                </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/addname"
+                    android:singleLine="true"
+                    android:backgroundTint="#ccc"
+                    android:theme="@style/AppThemes"
+                    android:focusable="false"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="Name not in the list? Enter Here."/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/email"
+                    android:singleLine="true"
+                    android:backgroundTint="#ccc"
+                    android:theme="@style/AppThemes"
+                    android:focusable="false"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:hint="Care to share your email (Optional)?"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:textColor="#000"
+                    android:text="If you share your email, we may send you great on-tour offers!"/>
+            </LinearLayout>
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_btn"
+            android:text="Start Your Now!"
+            android:id="@+id/login_btn"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:text="If you can't able to login please contact your tour operator"/>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/changeframe"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_10">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#333"
+        android:id="@+id/heading"
+        android:layout_marginLeft="13dp"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#333"
+        android:id="@+id/sub_heading"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="12sp"/>
+
+        <include layout="@layout/recycler_layout"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+  <!--  <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="430dp"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="You are at"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:id="@+id/city"
+        android:text=""/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/poi_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:id="@+id/op_poi"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:text="Optional POI"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:id="@+id/optional_list"/>
+   <!-- <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10">
+            <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="240dp"
+            android:layout_height="@dimen/dp_150"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="9dip"
+            android:elevation="5dp"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="true"
+            android:src="@drawable/background_img"
+            />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="240dp"
+                android:layout_height="@dimen/dp_150"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="9dip"
+                android:elevation="5dp"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                app:riv_tile_mode="repeat"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/background_img"
+                />
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="240dp"
+                android:layout_height="@dimen/dp_150"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="9dip"
+                android:elevation="5dp"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                app:riv_tile_mode="repeat"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/background_img"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>-->
+</LinearLayout>
+</ScrollView>
+</FrameLayout>

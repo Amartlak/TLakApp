@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardMaxElevation="12dp"
+        android:elevation="18dp"
+        app:cardCornerRadius="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:layout_margin="@dimen/dp_10"
+        app:cardElevation="10dp"
+
+        app:cardPreventCornerOverlap="false"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:corner_radius="@dimen/dp_10"
+            android:id="@+id/images">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:background="@drawable/background_img"/>
+       <!--  <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"
+                android:background="@drawable/background_img" />-->
+
+            <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                android:id="@+id/hjkf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="@dimen/dp_30"
+                android:background="#fff"
+                app:corner_radius="@dimen/dp_5"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/fir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/hotel_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#923701"
+                        android:text="Shangiri-La Hotel, Bangkok" />
+
+                    <ImageView
+                        android:id="@+id/hj"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/hotel_name"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/hotel_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hotel_name"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/hj"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:text="Shangiri-La Hotel, Bangkok" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fir"
+                    android:padding="@dimen/dp_10">
+
+                   <!-- <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rating="3" />
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/ratingBar"
+                        android:text="3"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="7dp"
+                        android:id="@+id/review"
+                        android:text="2452 Review" />
+                </RelativeLayout>
+
+            </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hjkf"
+                android:id="@+id/address"
+                android:layout_marginTop="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:padding="@dimen/dp_10"
+                  android:layout_marginLeft="@dimen/dp_10"
+                    android:id="@+id/firsts">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:id="@+id/im"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Free Wifi"
+                        android:id="@+id/wifi"
+                        android:textSize="11sp"
+                        android:textColor="#333"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/im"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:id="@+id/ims"
+                        android:layout_marginTop="14dp"
+                        android:text="free wifi"
+                        android:layout_below="@+id/im"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TV"
+                        android:id="@+id/tv"
+                        android:textSize="11sp"
+                        android:textColor="#333"
+                        android:layout_below="@+id/wifi"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/ims"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        >
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/imjd"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="King Sized Bed"
+                            android:id="@+id/bed"
+                            android:textSize="11sp"
+                            android:textColor="#333"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/imjd"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/imsfd"
+                            android:layout_marginTop="14dp"
+                            android:text="AC"
+                            android:layout_below="@+id/imjd"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AC"
+                            android:id="@+id/ac"
+                            android:layout_below="@+id/bed"
+                            android:layout_marginTop="14dp"
+                            android:textSize="11sp"
+                            android:textColor="#333"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/imsfd"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_10"
+                        android:layout_alignParentEnd="true"
+                        >
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/imj"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Power backup"
+                            android:id="@+id/backup"
+                            android:textSize="11sp"
+                            android:textColor="#333"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/imj"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:id="@+id/imsf"
+                            android:layout_marginTop="14dp"
+                            android:text="TV"
+                            android:layout_below="@+id/imj"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Geyser"
+                            android:id="@+id/geyser"
+                            android:textSize="11sp"
+                            android:textColor="#333"
+                            android:layout_below="@+id/backup"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/imsf"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:paddingLeft="15dp"
+                android:id="@+id/address_text"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:text="Address:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/addres"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/address_text"
+                android:text="Address:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A travel document is an identity document issued by a government or international treaty organization to facilitate the movement of individuals."
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/dp_5"
+                android:id="@+id/hotel_descrp"
+                android:paddingBottom="@dimen/dp_10"
+                android:layout_below="@+id/addres"/>
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+    <include layout="@layout/list_detail_layout"/>
+</LinearLayout>

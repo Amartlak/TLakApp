@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    android:layout_height="match_parent">
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:prompt="@string/hint_resource"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/gradient_spinner"
+        android:id="@+id/spinner_city"/>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/validatespin"
+    android:textColor="#923701"
+    android:layout_marginTop="4dp"
+    android:textSize="@dimen/sp_18"
+   android:layout_gravity="center"
+    android:gravity="center"
+        android:visibility="gone"
+    android:text=""/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:id="@+id/weatherlistview"/>
+</LinearLayout>
+  <!--  </ScrollView>-->
+</LinearLayout>

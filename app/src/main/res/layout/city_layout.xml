@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+        android:layout_width="match_parent"
+        app:corner_radius="5dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:id="@+id/sort"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter"
+        android:paddingTop="@dimen/dp_10"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/sp_14"
+        android:text="Filter By City"/>
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_10"
+            android:id="@+id/cancel"
+            android:background="@drawable/ic_cancel"/>
+   <!-- <ImageView
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/ic_cancel"
+        android:paddingTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_alignParentEnd="true"/>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/filter"
+        android:background="#000"
+        android:id="@+id/view"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="1dp"/>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/view"
+    android:id="@+id/citylist"/>
+    </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+</LinearLayout>

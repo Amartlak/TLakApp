@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lineaer">
+             <de.hdodenhof.circleimageview.CircleImageView
+                 android:layout_width="@dimen/dp_40"
+                 android:layout_height="@dimen/dp_40"
+                 android:id="@+id/docImg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="@dimen/dp_10"
+                android:id="@+id/docname"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Tickets and Passes"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

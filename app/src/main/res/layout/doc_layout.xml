@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/doc"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lineaer">
+       <!-- <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/docImg"/>-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:padding="@dimen/dp_10"
+    android:id="@+id/docname"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:text="Tickets and Passes"/>
+
+
+</LinearLayout>
+  <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flights"
+        android:textSize="15dp"
+        android:text="Boarding Pass (Flights)"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/ff"
+            android:layout_below="@+id/flights"
+            />
+    &lt;!&ndash;    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vocher"
+            android:textSize="15dp"
+            android:layout_below="@+id/ff"
+            android:text="Voucher (Hotels)"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/vo"
+            android:layout_below="@+id/vocher"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tour_guide"
+            android:textSize="15dp"
+            android:layout_below="@+id/vo"
+            android:text="Tour Guide"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/tour_guides"
+            android:layout_below="@+id/tour_guide"
+            />
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tickets"
+            android:textSize="15dp"
+            android:layout_below="@+id/tour_guides"
+            android:text="Other Passes (Tickets)"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tickets"
+            android:id="@+id/jjd"
+            />&ndash;&gt;
+        &lt;!&ndash;<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/visa"
+            android:textSize="15dp"
+            android:layout_below="@+id/jjd"
+            android:text="Visa"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/ffv"
+            android:layout_below="@+id/visa"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact"
+            android:textSize="15dp"
+            android:layout_below="@+id/ffv"
+            android:text="Emergency Contacts"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/co"
+            android:layout_below="@+id/contact"
+            />&ndash;&gt;
+       &lt;!&ndash; <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/certificate"
+            android:textSize="15dp"
+            android:layout_below="@+id/co"
+            android:text="ATOL Certificate"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/cer"
+            android:layout_below="@+id/certificate"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"
+            android:textSize="15dp"
+            android:layout_below="@+id/cer"
+            android:text="Tour Guide"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/pas"
+            android:layout_below="@+id/pass"
+            />&ndash;&gt;
+
+    </RelativeLayout>-->
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/pdf"/>
+</LinearLayout>
+</FrameLayout>

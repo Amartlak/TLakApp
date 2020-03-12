@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "616737097633",
+    "firebase_url": "https://tlakapp.firebaseio.com",
+    "project_id": "tlakapp",
+    "storage_bucket": "tlakapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616737097633:android:2e2616692c600f5fe7ede0",
+        "android_client_info": {
+          "package_name": "com.watconsult.tlakapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616737097633-tg9hep910m5997cj5sqo1osldantjoad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.watconsult.tlakapp",
+            "certificate_hash": "30198bc2b0a5a6670daac8c42bdaa900a5a9be43"
+          }
+        },
+        {
+          "client_id": "616737097633-lb680dnnmr5c5qqr6360sd8csotbcja8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPOD_LyPu5qTEqIEgPWNPPSkxzp0ClZGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616737097633-lb680dnnmr5c5qqr6360sd8csotbcja8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
