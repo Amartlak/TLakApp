@@ -3,7 +3,6 @@ package com.watconsult.tlakapp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -16,7 +15,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -32,9 +30,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.watconsult.sqlite.DBAdapter;
 import com.watconsult.tlakapp.databinding.ActivityMainBinding;
-import com.watconsult.tlakapp.model.ItinearyPOIItem;
 import com.watconsult.tlakapp.ui.Itineary.ItinearyFragment;
 import com.watconsult.tlakapp.ui.Optional.OptionalFragment;
 import com.watconsult.tlakapp.ui.document.DocumentFragment;
@@ -53,7 +49,6 @@ import com.watconsult.tlakapp.ui.termcondition.TConditionFragment;
 import com.watconsult.tlakapp.ui.upcomingtour.TourFragment;
 import com.watconsult.tlakapp.ui.weather.WeatherFragment;
 
-import java.io.Serializable;
 import java.util.List;
 
 import static com.watconsult.tlakapp.ui.Itineary.ItinearyFragment.company_name;

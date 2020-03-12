@@ -1,4 +1,4 @@
-package com.watconsult.sqlite;
+package com.watconsult.tlakapp.sqlite;
 
 import android.content.ContentValues;
 import android.content.Context;

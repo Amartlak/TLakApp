@@ -1,4 +1,4 @@
-package com.watconsult.sqlite;
+package com.watconsult.tlakapp.sqlite;
 
 /**
  * Created by Hp on 3/17/2016.

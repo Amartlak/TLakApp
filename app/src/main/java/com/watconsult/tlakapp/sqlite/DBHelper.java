@@ -1,4 +1,4 @@
-package com.watconsult.sqlite;
+package com.watconsult.tlakapp.sqlite;
 
 import android.content.Context;
 import android.database.SQLException;
