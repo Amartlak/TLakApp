@@ -15,6 +15,7 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -58,6 +59,8 @@ import java.util.List;
 import static com.watconsult.tlakapp.ui.Itineary.ItinearyFragment.company_name;
 
 public class MainActivity extends AppCompatActivity{
+
+    TextView txt;
     private ActivityMainBinding binding;
     private Animation fabOpenAnimation;
     private Animation fabCloseAnimation;
